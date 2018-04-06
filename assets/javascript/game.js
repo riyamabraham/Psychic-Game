@@ -17,6 +17,7 @@ function startGame() {
 
         console.log(computerGuess);
         if (userChoice === computerGuess) {
+            alert("Hey that was the compuer guess");
             wins++;
             guessesLeft = 9;
             emptyString = [];
@@ -25,6 +26,7 @@ function startGame() {
 
 
         } else if (guessesLeft === 0) {
+            alert("sorry try your luck next time");
             loses++;
             guessesLeft = 9;
             emptyString = [];
