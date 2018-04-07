@@ -16,7 +16,7 @@ function startGame() {
         var userChoice = event.key;
 
         console.log(computerGuess);
-        if (userChoice === computerGuess) {
+        if (userChoice.toLowerCase() === computerGuess) {
             alert("Hey that was the compuer guess");
             wins++;
             guessesLeft = 9;
